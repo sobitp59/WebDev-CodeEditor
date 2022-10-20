@@ -1,0 +1,88 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+/* font-family: 'Clash Display', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    font-family: 'Satoshi', sans-serif;
+}
+
+
+.code-editor{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+}
+
+.code-editor__header{
+    background: red;
+}
+.code-editor__header h1{
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    display: grid;
+    writing-mode: vertical-rl;
+}
+
+.code-editor__languages{
+    background: yellow;
+}
+
+.code-editor__result{
+    background: blue;
+}
+
+
+/* section */
+.code-editor__languages{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.code-editor__language-tab{
+    background-color: purple;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.code-editor__langueage-textarea{
+    background: green;
+}
+
+.code-editor__textarea{
+    min-width: 100%;
+    min-height: 100%;
+    resize: none;
+}
+
+
+.code-editor__result-btns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.code-editor__result{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.code-editor__output-frame{
+    display: block;
+    min-width: 100%;
+   min-height: 100%;
+}
+
+.code-editor__output-frame body{
+    margin: 0;
+}
+
+/* coommon */
+
+.code-editor__padding {
+    padding: 16px 0;
+    border-right: 1px solid;
+}

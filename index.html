@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&f[]=cabinet-grotesk@1,800,500,100,700,400,300,200,900&display=swap" rel="stylesheet">    
+    <!-- code mirror -->
+    <link rel="stylesheet" href="codemirror-5.65.9/lib/codemirror.css">
+    <script src="codemirror-5.65.9/lib/codemirror.js"></script>
+    <script src="codemirror-5.65.9/mode/xml/xml.js"></script>
+    <script src="codemirror-5.65.9/mode/css/css.js"></script>
+    <script src="codemirror-5.65.9/mode/javascript/javascript.js"></script>
+    
+    <!-- code mirror-->
+
+    <link rel="stylesheet" href="style.css">
+    <title>WebDEV | Write Awesome Code</title>
+</head>
+<body>
+    <div class="code-editor">
+
+        <header class="code-editor__header">
+            <h1>•WebDev•</h1>
+        </header>
+
+        <section class="code-editor__languages">
+            
+            <div class="code-editor__language-tab ">
+                <button class="code-editor__padding">
+                    <i class="fa-brands fa-html5"></i> html
+                </button>
+                <button class="code-editor__padding">
+                    <i class="fa-brands fa-css3-alt"></i> css
+                </button>
+                <button class="code-editor__padding">
+                    <i class="fa-brands fa-square-js"></i> javascript
+                </button>
+            </div>
+
+            <div class="code-editor__langueage-textarea">
+                <textarea class="code-editor__html code-editor__textarea">
+
+                </textarea>
+            </div>
+
+        </section>
+        
+        <section class="code-editor__result">
+            <div class="code-editor__result-btns ">
+                <button class="code-editor__padding"><i class="fa-solid fa-play"></i> Run</button>
+                <button class="code-editor__padding"> <i class="fa-solid fa-terminal"></i> Console</button>
+            </div>
+            <div class="code-editor__output-area">
+                <iframe class="code-editor__output-frame">
+
+                </iframe>
+            </div>
+
+        </section>
+
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
