@@ -1,6 +1,7 @@
-let codeEditorTabs = document.querySelectorAll('.codeEditor__tabs');
-let codeTextareas = document.querySelectorAll('.codeEditor__textareas');
+let codeEditorTabs = document.querySelectorAll('.code-editor__tabs');
+let codeTextareas = document.querySelectorAll('.code-editor__textarea');
 let runBtn = document.getElementById('run-btn');
+
 
 
 
@@ -14,10 +15,13 @@ codeEditorTabs.forEach((tab, index)=>{
         
         codeEditorTabs.forEach(tab => {
             tab.classList.remove('is-active')
+            tab.classList.remove('tab-active')
         })
 
         codeTextareas[index].classList.add('is-active')
+        codeTextareas[index].focus()
         codeEditorTabs[index].classList.add('is-active')
+        codeEditorTabs[index].classList.add('tab-active')
 
     })
 })
